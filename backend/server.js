@@ -14,7 +14,7 @@ const app = express();
 
 // connecting node js with mongoDB
 const url =
-  "mongodb+srv://tech:49MoiKiTwI7yuHWi@cluster0.au5km.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://prince123:prince123@traning.f0mnga6.mongodb.net/UPTODD?retryWrites=true&w=majority&appName=traning";
 mongoose.connect(url, { useNewUrlParser: true });
 const con = mongoose.connection;
 con.on("open", () => {
