@@ -25,6 +25,11 @@ app.use(express.json());
 app.use(cors()); // Enable CORS to allow requests from the frontend
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the API!");
+});
+
+
 // Serve the HTML form (if needed)
 app.get("/upload", (req, res) => {
   res.sendFile(path.join(__dirname, "App.jsx")); // Adjust the path to your actual HTML file
